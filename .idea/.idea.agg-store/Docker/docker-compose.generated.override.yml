@@ -1,0 +1,19 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  agg-store:
+    build:
+      context: "C:\\Projects\\hw\\agg-store"
+      dockerfile: "./Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/agg-store.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+    image: "agg-store:dev"
+    ports: []
+    volumes:
+    - "C:\\Projects\\hw\\agg-store:/app:rw"
+    working_dir: "/app"
